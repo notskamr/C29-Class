@@ -1,5 +1,7 @@
 class SlingShot{
     constructor(bodyA, pointB){
+        this.image1 = loadImage('sprites/sling.png');
+   
         var options = {
             bodyA: bodyA,
             pointB: pointB,
@@ -16,6 +18,8 @@ class SlingShot{
     }
 
     display(){
+        image(this.image1, 220,118, 50,100)
+       
         if(this.sling.bodyA){
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
